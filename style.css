@@ -1,3 +1,15 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap');
 body{
-    background-color: red;
+    background-color: rgb(90, 255, 57);
+}
+
+h1{
+    font-family: Rubik Doodle Shadow;
+    justify-content: center;
+    text-align: center;
+    color: rgb(1, 0, 0);
+    text-shadow: 3ex;
+    text-transform: uppercase;
+   
 }
