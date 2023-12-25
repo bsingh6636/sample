@@ -6,7 +6,7 @@ body{
 #Navigation_Bar{
   background-color: #8db600 ;
   height: auto;
-  margin-top: -2.5%;
+  margin-top: -0.55%;
   width: 145%;
   margin-left: -2.5%;
 }
@@ -20,10 +20,10 @@ h1{
     text-transform: uppercase;
 }
 #bsingh_logo{
-  height: 10%;
+  height:max-content;
   width: 10%;
-  margin-top: 0.5%;
-  margin-left: 0.5%;
+  margin-top:0%;
+  margin-left: 1.4%;
   margin-bottom: 0%;
   border-radius: 50%;
   background: linear-gradient(red,blue,green);
