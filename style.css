@@ -3,6 +3,13 @@
 body{
     background-color: rgb(90, 255, 57);
 }
+#Navigation_Bar{
+  background-color: #8db600 ;
+  height: auto;
+  margin-top: -2.5%;
+  width: 150%;
+  margin-left: -2.5%;
+}
 
 h1{
     font-family: Rubik Doodle Shadow;
@@ -15,8 +22,8 @@ h1{
 #bsingh_logo{
   height: 10%;
   width: 10%;
-  margin-top: -0.2cm;
-  margin-left: -0.2cm;
+  margin-top: 0.0cm;
+  margin-left: 0.0cm;
   border-radius: 50%;
   background: linear-gradient(red,blue,green);
   padding: 1.5px;
