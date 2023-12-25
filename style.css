@@ -3,12 +3,14 @@
 body{
     background-color: rgb(90, 255, 57);
 }
-#Navigation_Bar{
+.NavigationBar{
   background-color: #8db600 ;
   height: auto;
   margin-top: -0.55%;
   width: 145%;
   margin-left: -2.5%;
+  display: flex;
+  justify-content: space-between;
 }
 
 h1{
@@ -30,4 +32,18 @@ h1{
   padding: 1.5px;
   object-fit: cover;
     border-radius: 50%;
+}
+
+@media (max-width: 414px) {
+  .NavigationBar{
+    height: 1.5cm;
+    margin-top: -2.1%;
+    width: 105%;
+    margin-left: -2.5%;
+  }
+  #bsingh_logo{
+    height:auto;
+    margin-top:0%;
+    margin-left: 0%;
+  }
 }
