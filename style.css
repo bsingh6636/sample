@@ -40,7 +40,17 @@ body{
   background: linear-gradient(red,blue,green);
   padding: 1.8px;
   object-fit: cover;
-}@media only screen and (-webkit-device-pixel-ratio: 3), only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3), only screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)
+}
+
+#selling{
+  margin-top: 0.3cm;
+  margin-left: 0.3cm;
+  height: 10cm;
+  width: 10cm;
+}
+
+@media only screen and (-webkit-device-pixel-ratio: 3), only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3), only screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)
 {
   
 }
+
