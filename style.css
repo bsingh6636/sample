@@ -3,14 +3,34 @@
 body{
     background-color: rgb(90, 255, 57);
 }
-.NavigationBar{
-  background-color: #8db600 ;
+ .NavigationBar {
+  background-color: #333 ;
   height: auto;
   margin-top: -0.55%;
-  width: 100%;
   margin-left: -2.5%;
-  display: flex;
-  justify-content: space-between;
+  width: 100%;
+  color: #f2f2f2;
+  padding: 14px 16px;
+  justify-items: start;
+  text-align: center;
+} 
+.NavigationBar a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  justify-items: start;
+}
+
+.NavigationBar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.NavigationBar a.active {
+  background-color: #04AA6D;
+  color: white;
 }
 
 h1{
@@ -21,7 +41,7 @@ h1{
     text-shadow: 3ex;
     text-transform: uppercase;
 }
-#bsingh_logo{
+#bsingh_logo,.logo{
   height:max-content;
   width: 10%;
   margin-top:0%;
@@ -33,15 +53,19 @@ h1{
   object-fit: cover;
     border-radius: 50%;
 }
+.logo{
+  max-width: 1cm;
+}
 
-@media (max-width: 777px) {
+@media only screen and (-webkit-device-pixel-ratio: 3), only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3), only screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)
+{
   .NavigationBar{
     height: 1.5cm;
     margin-top: -2.1%;
     width: 105%;
     margin-left: -2.5%;
   }
-  #bsingh_logo{
+  #bsingh_logo,.logo{
     height:auto;
     margin-top:0%;
     margin-left: 0%;
