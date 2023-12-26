@@ -7,7 +7,7 @@ body{
   background-color: #8db600 ;
   height: auto;
   margin-top: -0.55%;
-  width: 145%;
+  width: 100%;
   margin-left: -2.5%;
   display: flex;
   justify-content: space-between;
@@ -34,7 +34,7 @@ h1{
     border-radius: 50%;
 }
 
-@media (max-width: 414px) {
+@media (max-width: 777px) {
   .NavigationBar{
     height: 1.5cm;
     margin-top: -2.1%;
