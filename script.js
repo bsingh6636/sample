@@ -17,17 +17,17 @@
 //         fetch('https://ipinfo.io/json?token=853d7677309503d88db0457e8f66de21')
 window.onload = function () {
   const getLocation = () => {      
-      // Replace 'YOUR_API_KEY' with your actual ipstack API key
-      const apiKey = '853d7677309503d88db0457e8f66de21';
+      // Replace 'YOUR_API_KEY' with your actual ipinfo API key
+      const apiKey = 'ff3b255d99c518';
 
-      fetch(`https://api.ipstack.com/check?access_key=${apiKey}`)
+      fetch(`https://ipinfo.io?token=${apiKey}`)
           .then((response) => response.json())
           .then((data) => {
               // Handle location data (country, region, city, etc.)
               console.log(data);
 
               const des = document.querySelector(".location");
-              des.innerHTML = `latitude: ${data.latitude} longitude: ${data.longitude}`;
+              des.innerHTML = `latitude: ${data.loc.split(',')[0]} longitude: ${data.loc.split(',')[1]}`;
           })
           .catch((error) => {
               // Handle error
@@ -37,6 +37,7 @@ window.onload = function () {
 
   getLocation(); // Call the function when the window has fully loaded
 }
+
 
 
 
