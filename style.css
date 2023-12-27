@@ -1,7 +1,9 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap');
 body{
-    background-color: #f2f3f4 ;
+    background-color: #ABB2B9 ;
+    width: 100%;
+
 }
 .topnav {
   background-color: #333;
@@ -51,8 +53,14 @@ body{
 #selling{
   margin-top: 0.3cm;
   margin-left: 0.3cm;
+  margin-left: 0cm;
   height: 10cm;
   width: 10cm;
+}
+.forprices1{
+  margin-left: 0em;
+  background-color: red;
+  width: fit-content;
 }
 
 {box-sizing:border-box}
@@ -60,7 +68,7 @@ body{
 .slideshow-container{
   max-width: 1000px;
   position:inherit;
-  
+  background-color: red;
 
 }
 .mySlides{
@@ -143,8 +151,5 @@ body{
   from {opacity: .4}
   to {opacity: 1}
 }
-@media only screen and (-webkit-device-pixel-ratio: 3), only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3), only screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)
-{
-  
-}
+
 
