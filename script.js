@@ -20,7 +20,7 @@ window.onload = function () {
       // Replace 'YOUR_API_KEY' with your actual ipstack API key
       const apiKey = '853d7677309503d88db0457e8f66de21';
 
-      fetch(`http://api.ipstack.com/check?access_key=${apiKey}`)
+      fetch(`https://api.ipstack.com/check?access_key=${apiKey}`)
           .then((response) => response.json())
           .then((data) => {
               // Handle location data (country, region, city, etc.)
