@@ -32,6 +32,7 @@ window.onload = function () {
           .catch((error) => {
               // Handle error
               console.error('Error fetching location data:', error);
+              return data;
           });
   }
 
