@@ -6,6 +6,12 @@ body{
 .topnav {
   background-color: #333;
   overflow: hidden;
+  width: 35cm;
+}
+.slideimage{
+  width: 130%;
+  margin-left: 0cqmax;
+  background-color: red;
 }
 
 /* Style the links inside the navigation bar */
@@ -53,11 +59,14 @@ body{
 
 .slideshow-container{
   max-width: 1000px;
-  position: relative;
-  margin: auto;
+  position:inherit;
+  
+
 }
 .mySlides{
   display: none;
+  background-color: red;
+  margin-left: 0cm;
 }
 .prev, .next {
   cursor: pointer;
