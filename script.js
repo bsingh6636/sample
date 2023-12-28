@@ -2,7 +2,6 @@ window.onload = function () {
   const getLocation = () => {      
       // Replace 'YOUR_API_KEY' with your actual ipinfo API key
       const apiKey = 'ff3b255d99c518';
-    //   const apiKey = 'ff3b255d9kk9c518';
       fetch(`https://ipinfo.io?token=${apiKey}`)
           .then((response) => {
               if (!response.ok) {

@@ -13,7 +13,7 @@ body{
 .slideimage{
   width: 130%;
   margin-left: 0cqmax;
-  background-color: red;
+ 
 }
 
 /* Style the links inside the navigation bar */
@@ -59,7 +59,7 @@ body{
 }
 .forprices1{
   margin-left: 0em;
-  background-color: red;
+ 
   width: fit-content;
 }
 
@@ -68,12 +68,12 @@ body{
 .slideshow-container{
   max-width: 1000px;
   position:inherit;
-  background-color: red;
+ 
 
 }
 .mySlides{
   display: none;
-  background-color: red;
+ 
   margin-left: 0cm;
 }
 .prev, .next {
