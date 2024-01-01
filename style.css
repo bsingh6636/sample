@@ -8,7 +8,7 @@ body{
 .topnav {
   background-color: #333;
   overflow: hidden;
-  width: 35cm;
+  
 }
 .slideimage{
   width: 130%;
@@ -59,14 +59,14 @@ body{
 }
 .forprices1{
   margin-left: 0em;
- 
   width: fit-content;
 }
 
 {box-sizing:border-box}
 
 .slideshow-container{
-  max-width: 1000px;
+  width:60%;
+  height: 10%;
   position:inherit;
  
 
@@ -152,4 +152,10 @@ body{
   to {opacity: 1}
 }
 
+marquee{
+  font-size: 200%;
+  color: red;
+  background-color: #333;
+  font-weight: 800;
+}
 
