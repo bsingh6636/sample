@@ -1,29 +1,38 @@
 window.onload = function () {
-  const getLocation = () => {      
-      // Replace 'YOUR_API_KEY' with your actual ipinfo API key
-      const apiKey = 'ff3b255d99c518';
-      fetch(`https://ipinfo.io?token=${apiKey}`)
-          .then((response) => {
-              if (!response.ok) {
-                  throw new Error(`HTTP error! Status: ${response.status}`);
-              }
-              return response.json();
-          })
-          .then((data) => {
-              // Handle location data (country, region, city, etc.)
-              console.log(data);
+    const getLocation = () => {
+        // Replace 'YOUR_API_KEY' with your actual IPinfo API key
+        const apiKey = 'ff3b255d99c518'; // Replace with your actual API key
 
-              const des = document.querySelector(".location");
-              des.innerHTML = `latitude: ${data.loc.split(',')[0]} longitude: ${data.loc.split(',')[1]}`;
-          })
-          .catch((error) => {
-              // Handle error
-              console.error('Error fetching location data:', error);
-          });
-  }
+        fetch(`https://ipinfo.io?token=${apiKey}`)
+            .then((response) => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then((data) => {
+                // Handle location data (country, region, city, etc.)
+                console.log(data);
 
-  getLocation(); 
-}
+                // Check if 'loc' property exists in the response data
+                if (data.loc) {
+                    const [latitude, longitude] = data.loc.split(',');
+                    const locationElement = document.querySelector(".location");
+                    locationElement.innerHTML = `Latitude: ${latitude} Longitude: ${longitude}`;
+                } else {
+                    console.error('Location data is incomplete:', data);
+                }
+            })
+            .catch((error) => {
+                // Handle fetch error
+                console.error('Error fetching location data:', error.message);
+            });
+    };
+
+    getLocation();
+};
+
+
 
 
 
