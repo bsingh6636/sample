@@ -22,7 +22,7 @@ window.onload = function () {
           });
   }
 
-  getLocation(); // Call the function when the window has fully loaded
+  getLocation(); 
 }
 
 
@@ -61,7 +61,7 @@ function showSlides() {
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
 
-    setTimeout(showSlides, 2000); // Change slide every 2 seconds (adjust as needed)
+    setTimeout(showSlides, 2000);
 }
 
 // Pause slideshow when hovering over it
